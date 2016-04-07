@@ -1,0 +1,39 @@
+13:28:53.486 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml. 
+13:35:34.828 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/vezba7/SDK/SDK_Workspace/vezba7_hw_platform/download.bit" 
+13:36:35.750 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/vezba7/SDK/SDK_Workspace/vezba7_hw_platform/download.bit" 
+13:38:03.284 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/vezba7/SDK/SDK_Workspace/vezba7_hw_platform/download.bit" 
+13:40:15.643 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:02:35.214 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/vezba7/SDK/SDK_Workspace/vezba7_hw_platform/download.bit" 
+11:07:58.497 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:37:05.051 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml. 
+11:37:05.924 INFO  - The hardware specification for project 'vezba7_hw_platform' is different from C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml. 
+11:37:05.940 INFO  - Copied contents of C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml into \vezba7_hw_platform\system.xml. 
+11:37:05.955 INFO  - Copied contents of C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.bit into \vezba7_hw_platform\system.bit. 
+11:37:05.955 INFO  - Copied contents of C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system_bd.bmm into \vezba7_hw_platform\system_bd.bmm. 
+11:37:06.501 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:37:07.499 INFO  - Updating MSS for Board Support Package Project: hello_world_bsp.
+		 The following driver assignments were removed:
+			Peripheral Instance: leds, driver: gpio_v3_01_a.
+		 The following new driver assignments were made:
+			Peripheral Instance: my_peripheral_0, driver: generic_v1_00_a.
+ 
+11:37:19.103 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:37:19.103 INFO  - Clearing existing target manager status. 
+11:41:03.164 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:42:11.581 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml. 
+11:43:20.159 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml. 
+11:49:52.715 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml. 
+11:49:53.995 INFO  - The hardware specification for project 'vezba7_hw_platform' is different from C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml. 
+11:49:53.995 INFO  - Copied contents of C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.xml into \vezba7_hw_platform\system.xml. 
+11:49:54.010 INFO  - Copied contents of C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system.bit into \vezba7_hw_platform\system.bit. 
+11:49:54.010 INFO  - Copied contents of C:\materija\RA77-2013\vezba7\SDK\SDK_Export\hw\system_bd.bmm into \vezba7_hw_platform\system_bd.bmm. 
+11:49:54.619 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:49:55.555 INFO  - Updating MSS for Board Support Package Project: hello_world_bsp.
+		 The following driver assignments were removed:
+			Peripheral Instance: dip_switches, driver: gpio_v3_01_a.
+ 
+11:49:56.600 INFO  - Updating hardware inferred compiler options for hello_world. 
+11:49:56.631 INFO  - Clearing existing target manager status. 
+12:05:04.453 WARN  - Terminating existing sessions on processor microblaze_0 
+12:05:08.432 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/vezba7/SDK/SDK_Workspace/vezba7_hw_platform/download.bit" 
+12:07:42.004 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

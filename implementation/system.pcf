@@ -1,0 +1,54 @@
+//! **************************************************************************
+// Written by: Map P.68d on Thu Mar 24 11:47:57 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLK_N" LOCATE = SITE "AF14" LEVEL 1;
+COMP "CLK_P" LOCATE = SITE "AD14" LEVEL 1;
+COMP "RESET" LOCATE = SITE "AE24" LEVEL 1;
+COMP "RS232_Uart_1_sout" LOCATE = SITE "A20" LEVEL 1;
+COMP "DIP_Switches_TRI_I<0>" LOCATE = SITE "W19" LEVEL 1;
+COMP "DIP_Switches_TRI_I<1>" LOCATE = SITE "Y24" LEVEL 1;
+COMP "DIP_Switches_TRI_I<2>" LOCATE = SITE "K19" LEVEL 1;
+COMP "DIP_Switches_TRI_I<3>" LOCATE = SITE "V24" LEVEL 1;
+COMP "DIP_Switches_TRI_I<4>" LOCATE = SITE "U20" LEVEL 1;
+COMP "DIP_Switches_TRI_I<5>" LOCATE = SITE "U23" LEVEL 1;
+COMP "DIP_Switches_TRI_I<6>" LOCATE = SITE "U24" LEVEL 1;
+COMP "DIP_Switches_TRI_I<7>" LOCATE = SITE "U19" LEVEL 1;
+COMP "RS232_Uart_1_sin" LOCATE = SITE "A21" LEVEL 1;
+COMP "LEDS_TRI_O<0>" LOCATE = SITE "N24" LEVEL 1;
+COMP "LEDS_TRI_O<1>" LOCATE = SITE "N23" LEVEL 1;
+COMP "LEDS_TRI_O<2>" LOCATE = SITE "M24" LEVEL 1;
+COMP "LEDS_TRI_O<3>" LOCATE = SITE "L24" LEVEL 1;
+COMP "LEDS_TRI_O<4>" LOCATE = SITE "L23" LEVEL 1;
+COMP "LEDS_TRI_O<5>" LOCATE = SITE "K24" LEVEL 1;
+COMP "LEDS_TRI_O<6>" LOCATE = SITE "H24" LEVEL 1;
+COMP "LEDS_TRI_O<7>" LOCATE = SITE "D24" LEVEL 1;
+TIMEGRP microblaze_0_ilmb_POR_FF_I_dst = BEL
+        "microblaze_0_ilmb/microblaze_0_ilmb/POR_FF_I";
+TIMEGRP microblaze_0_dlmb_POR_FF_I_dst = BEL
+        "microblaze_0_dlmb/microblaze_0_dlmb/POR_FF_I";
+TIMEGRP axi4lite_0_reset_resync = BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1"
+        BEL
+        "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2";
+TIMEGRP microblaze_0_Reset_dst = BEL
+        "microblaze_0/microblaze_0/MicroBlaze_Core_I/Reset_DFF.reset_temp";
+TIMEGRP axi4lite_0_reset_source = FFS(*) PADS(*);
+TIMEGRP "FFS" = FFS(*);
+PATH TS_TIG_microblaze_0_Reset_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_Reset_dst";
+PATH "TS_TIG_microblaze_0_Reset_path" TIG;
+PATH TS_axi4lite_0_reset_resync_path = FROM TIMEGRP "axi4lite_0_reset_source"
+        TO TIMEGRP "axi4lite_0_reset_resync";
+PATH "TS_axi4lite_0_reset_resync_path" TIG;
+PATH TS_TIG_microblaze_0_dlmb_POR_FF_I_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_dlmb_POR_FF_I_dst";
+PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_path" TIG;
+PATH TS_TIG_microblaze_0_ilmb_POR_FF_I_path = FROM TIMEGRP "FFS" TO TIMEGRP
+        "microblaze_0_ilmb_POR_FF_I_dst";
+PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_path" TIG;
+SCHEMATIC END;
+
